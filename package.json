@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "cypress": "^13.4.0"
+  },
+  "scripts": {
+    "all-reporter": "cypress run --spec cypress/e2e/1-getting-started/todo.cy.js --browser chrome --headed"
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^3.6.1"
+  }
+}

@@ -1,30 +1,5 @@
-# cypress - Mochawesome(Reporter)
-cypress reporter with mochawesome
+/// <reference types="cypress" />
 
-# Steps for Cypress
-```
-npm install cypress --save-dev
-npx cypress open
-```
-[Documentation Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)
-
-## Screenshots
-![App Screenshot](https://user-images.githubusercontent.com/1271364/31740846-7bf607f0-b420-11e7-855f-41c996040d31.gif)
-
-# Steps for mochawesome-reporter
-```
-npm i cypress-mochawesome-reporter
-```
-[Documentation Mochawesome Reporter](https://www.npmjs.com/package/cypress-mochawesome-reporter?activeTab=readme)
-
-## Screenshots
-![App Screenshot](https://raw.githubusercontent.com/LironEr/cypress-mochawesome-reporter/HEAD/docs/assets/failed-test-with-screenshot.png)
-
-## Running Tests
-
-To run tests, run the following command
-
-```bash
 describe('example to-do app', () => {
   beforeEach(() => {
     cy.visit('https://example.cypress.io/todo')
@@ -56,6 +31,7 @@ describe('example to-do app', () => {
   })
 
   context('with a checked task', () => {
+    
     beforeEach(() => {
       cy.contains('Pay electric bill')
         .parent()
@@ -91,8 +67,3 @@ describe('example to-do app', () => {
     })
   })
 })
-```
-
-## Authors
-- [@LironEr](https://github.com/LironEr/cypress-mochawesome-reporter)
-- [readme.so(editor)](https://readme.so/editor)
